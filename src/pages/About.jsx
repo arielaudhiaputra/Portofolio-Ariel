@@ -99,7 +99,7 @@ export function About(){
 
                             <div className="flex w-full justify-center lg:justify-end order-1 lg:order-2 overflow-clip">
                                <motion.img src={Foto} alt="" className="w-[60%] md:w-[50%] lg:w-[72%] rounded-full"
-                                  initial={{ rotate: 90, x: 300 }}
+                                  initial={{ rotate: 90, x: 200 }}
                                   whileInView={{ rotate: 0, x: 0 }}
                                   transition={{ ease: "easeInOut", duration: 0.8 ,delay: 0.6 }}
                                />
