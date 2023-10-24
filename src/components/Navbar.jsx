@@ -28,8 +28,9 @@ export function Navbar(){
             const localTheme = localStorage.getItem("theme");
             document.documentElement.classList.add(localTheme)
         } else {
-            localStorage.setItem("theme", theme);
-            document.documentElement.classList.remove("dark")
+            localStorage.setItem("dark", theme);
+            const localTheme = localStorage.getItem("theme");
+            document.documentElement.classList.remove(localTheme)
         }
     }, [theme])
 
