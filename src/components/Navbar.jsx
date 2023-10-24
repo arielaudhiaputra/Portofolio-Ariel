@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import DarkIcon from "./icons/DarkIcon";
 import SunIcon from "./icons/SunIcon";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CloseMenu from "./icons/CloseMenu";
 import OpenMenu from "./icons/OpenMenu";
 
@@ -15,9 +15,9 @@ export function Navbar(){
         return () => window.removeEventListener("scroll", scrollActive);
     }, [active])
 
+
+
     const [theme, setTheme] = useState(localStorage.getItem("theme"));
-
-
     useEffect(() => {
         if (theme === "dark") {
             localStorage.setItem("theme", theme);
@@ -33,6 +33,7 @@ export function Navbar(){
     const handleToggle = () => {
         setTheme(theme === "dark" ? "light" : "dark")
     }
+
 
     const [toggle, setToggle] = useState(false)
     const navToggle = () => {
@@ -50,10 +51,10 @@ export function Navbar(){
                     active ? "shadow-xl" : ""
                 } fixed bg-gray-100 dark:bg-gray-900 w-full z-20 top-0 left-0`}>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 lg:py-4 lg:px-20">
-                    <div className="flex flex-col justify-start">
+                    <Link to="/" className="flex flex-col justify-start">
                         <h1 className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white">Ariel Audhia Putra</h1>
                         <span className="text-sm text-gray-400">Web Developer</span>
-                    </div>
+                    </Link>
 
                     <div className="flex md:order-2 md:hidden">
                         <button onClick={navToggle}>
