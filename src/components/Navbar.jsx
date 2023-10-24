@@ -34,8 +34,6 @@ export function Navbar(){
         setTheme(theme === "dark" ? "light" : "dark")
     }
 
-    console.log(theme)
-
     const [toggle, setToggle] = useState(false)
     const navToggle = () => {
         if (toggle === false ) {

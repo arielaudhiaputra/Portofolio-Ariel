@@ -2,6 +2,7 @@ import Layouts from "../layouts/Index"
 import { motion } from "framer-motion"
 import Freelance from "../assets/image/freelance-front.png"
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 
 export function Home(){
     const container = {
@@ -86,7 +87,7 @@ export function Home(){
                                 whileInView="visible"
                             >let’s Introduce about myself</motion.h1>
                             <h1 className="text-md md:text-lg lg:text-xl text-gray-500 dark:text-white">I am always ready to face trials wisely, and I continue to develop to be the best. "Dream as high as the sky. If you fall, you will fall among the stars"</h1>
-                            <a href="/about" className="py-3 px-4 w-1/2 text-center text-md md:text-xl bg-sky-500 rounded-lg text-white font-semibold">About Me</a>
+                            <Link to="/about" className="py-3 px-4 w-1/2 text-center text-md md:text-xl bg-sky-500 rounded-lg text-white font-semibold">About Me</Link>
                         </div>
 
                         <div className="flex flex-col w-full items-start py-4 md:ps-24 lg:ps-0 lg:ml-[37px] gap-3 overflow-hidden">
@@ -263,7 +264,7 @@ export function Home(){
                             >Interested in Working Together?</h1>
                             <span className="h-[6px] w-[95%] lg:w-[80%] bg-sky-500"></span>
 
-                            <a href="/contact" className="md:py-4 md:px-16 py-3 px-12 bg-sky-500 mt-10 text-white font-bold text-lg md:text-xl rounded-full">Get In Touch</a>
+                            <Link to="/contact" className="md:py-4 md:px-16 py-3 px-12 bg-sky-500 mt-10 text-white font-bold text-lg md:text-xl rounded-full">Get In Touch</Link>
                         </motion.div>
                     </div>
                 </div>
