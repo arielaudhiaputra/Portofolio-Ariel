@@ -15,12 +15,8 @@ export function Navbar(){
         return () => window.removeEventListener("scroll", scrollActive);
     }, [active])
 
-    const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
-    useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-            setTheme("light")
-        }
-    }, [])
+    const [theme, setTheme] = useState(localStorage.getItem("theme"));
+
 
     useEffect(() => {
         if (theme === "dark") {
@@ -28,15 +24,17 @@ export function Navbar(){
             const localTheme = localStorage.getItem("theme");
             document.documentElement.classList.add(localTheme)
         } else {
-            localStorage.setItem("dark", theme);
+            localStorage.setItem("theme", theme);
             const localTheme = localStorage.getItem("theme");
-            document.documentElement.classList.remove(localTheme)
+            document.documentElement.classList.remove("dark")
         }
     }, [theme])
 
     const handleToggle = () => {
         setTheme(theme === "dark" ? "light" : "dark")
     }
+
+    console.log(theme)
 
     const [toggle, setToggle] = useState(false)
     const navToggle = () => {
