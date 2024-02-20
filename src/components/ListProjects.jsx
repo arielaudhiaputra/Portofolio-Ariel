@@ -9,18 +9,18 @@ const ListProjects = [
     {
         title: 'Web Freelance',
         html: (
-            <motion.div className="flex justify-center mx-auto w-full h-full gap-4 items-center">
-                <div className="flex flex-col-reverse lg:flex-row shadow-lg bg-green-400 border-4 border-black bg-bl-300 w-full p-10 md:gap-20 gap-7">
+            <motion.div className="flex justify-center mx-auto w-full h-full gap-4 items-center mt-10">
+                <div className="flex flex-col-reverse lg:flex-row shadow-lg bg-green-400 border-4 border-black w-full p-10 md:gap-20 gap-7">
                     <div className="flex flex-col w-full justify-start">
                         <h1 className="text-2xl md:text-3xl font-bold">Web Freelance</h1>
-                        <p className="text-sm font-semibold md:text-base">Sebuah "web freelancer" adalah sebutan untuk seorang profesional atau individu yang bekerja secara independen dalam industri teknologi, desain, penulisan, atau bidang lainnya dan menawarkan layanan mereka melalui platform online. </p>
+                        <p className="text-sm font-semibold md:text-base"> Sebuah "web freelancer" adalah sebutan untuk seorang profesional atau individu yang bekerja secara independen dalam industri teknologi, desain, penulisan, atau bidang lainnya dan menawarkan layanan mereka melalui platform online. </p>
 
                         <a href="https://github.com/arielaudhiaputra/freelancer-laravel" target="_blank" className="py-1 px-2 text-center md:py-2 md:px-3 text-base md:text-lg bg-[#21b07d] w-1/2 md:w-[40%] lg:w-1/2 mt-10 rounded-lg border-2 border-black font-bold">Repository</a>
 
                         <div className="flex flex-col w-full mt-6 md:mt-10">
                             <h1 className="font-bold text-lg">Tech :</h1>
                             <div className="flex flex-wrap gap-2">
-                                <button className="md:px-6 md:py-2 px-4 py-1 border-2 border-black bg-orange-500 font-bold">HTML</button>
+                                 <button className="md:px-6 md:py-2 px-4 py-1 border-2 border-black bg-orange-500 font-bold">HTML</button>
                                 <button className="md:px-6 md:py-2 px-4 py-1 border-2 border-black bg-teal-500 font-bold">Tailwind CSS</button>
                                 <button className="md:px-6 md:py-2 px-4 py-1 border-2 border-black bg-yellow-500 font-bold">JavaScript</button>
                                 <button className="md:px-6 md:py-2 px-4 py-1 border-2 border-black bg-red-500 font-bold">Laravel</button>
@@ -29,8 +29,8 @@ const ListProjects = [
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full mx-auto"animate={{ rotate: -1 }} >
-                        <motion.img className="w-full my-auto border-4 border-black" src={Freelance} alt="" animate={{ rotate: -2 }} />
+                    <div className="flex flex-col w-full mx-auto" animate={{ rotate: -1 }} >
+                        <motion.img className="w-full my-auto border-4 border-black" src={Freelance} alt="" animate={{ rotate: -2 }}/>
                     </div>
                 </div>
             </motion.div>
@@ -62,7 +62,7 @@ const ListProjects = [
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full mx-auto"animate={{ rotate: -1 }} >
+                    <div className="flex flex-col w-full mx-auto" animate={{ rotate: -1 }} >
                         <motion.img className="w-full my-auto border-4 border-black" src={Moonton} alt="" animate={{ rotate: -2 }}/>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ const ListProjects = [
         title: 'SPP',
         html: (
             <motion.div className="flex justify-center mx-auto w-full h-full gap-4 items-center mt-10">
-                <div className="flex flex-col-reverse lg:flex-row shadow-lg border-4 border-black bg-[#67816e] w-full p-10  md:gap-20 gap-7">
+                <div className="flex flex-col-reverse lg:flex-row shadow-lg border-4 border-black bg-[#67816e] w-full p-10 md:gap-20 gap-7">
                     <div className="flex flex-col w-full justify-start">
                         <h1 className="text-2xl md:text-3xl font-bold">SPP Online</h1>
                         <p className="text-sm font-semibold md:text-base">Aplikasi Sistem Pembayaran Siswa (SPP) online adalah alat digital yang memungkinkan sekolah atau institusi pendidikan untuk mengelola pembayaran SPP secara elektronik. </p>
@@ -93,7 +93,7 @@ const ListProjects = [
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full mx-auto"animate={{ rotate: -1 }} >
+                    <div className="flex flex-col w-full mx-auto" animate={{ rotate: -1 }} >
                         <motion.img className="w-full my-auto border-4 border-black" src={Spp} alt="" animate={{ rotate: 2 }}/>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ const ListProjects = [
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full mx-auto"animate={{ rotate: -1 }} >
+                    <div className="flex flex-col w-full mx-auto" animate={{ rotate: -1 }} >
                         <motion.img className="w-full my-auto border-4 border-black" src={Quran} alt="" animate={{ rotate: 2 }}/>
                     </div>
                 </div>
