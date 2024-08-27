@@ -94,7 +94,7 @@ export function About(){
                                   transition={{ type: "tween", duration: 0.8, delay: 0.5 }}
                                 >I’m Ariel Audhia Putra. I live in Bogor Indonesia</motion.h2>
                                 <p className="text-base mt-4 dark:text-white">Saat ini saya adalah fresh graduate lulusan rekayasa perangkat lunak SMKN 4 Bogor dan saya adalah seorang programmer junior.</p>
-                                <p className="text-base dark:text-white">Saya berminat terus mengembangkan keterampilan saya dan menjadi profesional, bersemanagat untuk mengambil setiap peluang untuk tumbuh melalui rekan tim dan organisasi.</p>
+                                <p className="text-base dark:text-white">Saya berminat terus mengembangkan keterampilan saya dan menjadi profesional, bersemangat untuk mengambil setiap peluang untuk tumbuh melalui rekan tim dan organisasi.</p>
                             </div>
 
                             <div className="flex w-full justify-center lg:justify-end order-1 lg:order-2 overflow-clip">
